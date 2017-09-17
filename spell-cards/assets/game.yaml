@@ -1,0 +1,153 @@
+id: wizard_school
+description:
+  game_name: 'Wizard School'
+  summary: 'Go to Wizard School to learn how to be a wizard.'
+  authors:
+engine:
+  value_sets:
+  - type: value_set_base
+    value_set_base:
+      value_set_id: spells
+      label: Spells
+      label_singular: Spell
+      description: A spell that can be cast by a wizard.
+      value_type: text
+      values:
+      - type: value_text
+        value_text:
+          value_id: magic_missle
+          description: 'You shoot a missile of magical energy from your fingertip.'
+          value: Magic Missle
+          variables:
+          - type: variable_number
+            variable_number:
+              id: level
+              label: Level
+              description: Spell level.
+              value:
+                type: number_literal
+                number_literal: 1
+          - type: variable_text
+            variable_text:
+              id: school
+              label: School
+              description: School of magic.
+              value:
+                type: text_literal
+                text_literal: 'evocation'
+          - type: variable_text
+            variable_text:
+              id: casting_time
+              label: Casting Time
+              description: How long it takes to cast the spell.
+              value:
+                type: text_literal
+                text_literal: '1 action'
+          - type: variable_text
+            variable_text:
+              id: range
+              label: Range
+              description: The range of the spell.
+              value:
+                type: text_literal
+                text_literal: '120 feet'
+          - type: variable_text
+            variable_text:
+              id: components
+              label: Components
+              description: Spell component types.
+              value:
+                type: text_literal
+                text_literal: 'V, S'
+          - type: variable_text
+            variable_text:
+              id: duration
+              label: Duration
+              description: Spell duration.
+              value:
+                type: text_literal
+                text_literal: 'instantaneous'
+          - type: variable_text
+            variable_text:
+              id: description
+              label: Description
+              description: The spell description.
+              value:
+                type: text_literal
+                text_literal: >
+                  You create three glowing darts of magical force. Each dart hits a creature of
+                  your choice that you can see within range. A dart deals 1d4 + 1 force damage to
+                  its target. The darts all strike simultaneously, and you can direct them to hit
+                  one creature or several.
+      - type: value_text
+        value_text:
+          value_id: prismatic_spray
+          description: 'Either multicolored rays of light flash from your hand.'
+          value: Prismatic Spray
+          variables:
+          - type: variable_number
+            variable_number:
+              id: level
+              label: Level
+              description: Spell level.
+              value:
+                type: number_literal
+                number_literal: 7
+          - type: variable_text
+            variable_text:
+              id: school
+              label: School
+              description: School of magic.
+              value:
+                type: text_literal
+                text_literal: 'evocation'
+          - type: variable_text
+            variable_text:
+              id: casting_time
+              label: Casting Time
+              description: How long it takes to cast the spell.
+              value:
+                type: text_literal
+                text_literal: '1 action'
+          - type: variable_text
+            variable_text:
+              id: range
+              label: Range
+              description: The range of the spell.
+              value:
+                type: text_literal
+                text_literal: 'Self (60-foot cone)'
+          - type: variable_text
+            variable_text:
+              id: components
+              label: Components
+              description: Spell component types.
+              value:
+                type: text_literal
+                text_literal: 'V, S'
+          - type: variable_text
+            variable_text:
+              id: duration
+              label: Duration
+              description: Spell duration.
+              value:
+                type: text_literal
+                text_literal: 'Instantaneous'
+          - type: variable_text
+            variable_text:
+              id: description
+              label: Description
+              description: The spell description.
+              value:
+                type: text_literal
+                text_literal: >
+                  Eight multicolored rays of light flash from your hand. Each ray is a different
+                  color and has a different power and purpose. Each creature in a 60-foot cone must
+                  make a Dexterity saving throw. For each target, roll a d8 to determine which
+                  color ray affects it.
+  mechanics:
+  mechanic_categories:
+  functions:
+  programs:
+  summations:
+
